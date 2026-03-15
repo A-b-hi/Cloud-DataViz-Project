@@ -6,7 +6,7 @@ The proposed system follows a layered architecture to ensure modularity, scalabi
 The data layer contains datasets stored in CSV format. These datasets act as the input for the visualization system and can be updated as required.
 
 ### Visualization Layer
-The visualization layer uses data visualization tools to generate charts, graphs, and interactive dashboards. This layer allows users to explore data, apply filters, and analyze trends.
+The visualization layer uses Microsoft Power BI Desktop to generate charts, graphs, and interactive dashboards. This layer allows users to explore data, apply filters, and analyze trends.
 
 ### Virtualization Layer
 The visualization system is hosted within a virtual machine. Virtualization ensures isolation from the host system, platform independence, and portability across different environments.
@@ -16,20 +16,21 @@ The cloud layer enables remote access to the dashboards through internet connect
 
 This layered architecture supports centralized deployment, efficient resource utilization, and scalability while maintaining system reliability.
 
-## System Flow Diagram 
-The system follows a structured workflow that transforms raw data into meaningful visual insights. The process begins with collecting datasets in CSV format, followed by data cleaning and preprocessing to ensure data quality and consistency. The cleaned dataset is then used within a virtualized Ubuntu environment where Tableau Desktop is used to create visualizations. These visualizations are combined into an interactive dashboard, which can optionally be published to the cloud for sharing and remote access.
+### System Flow Diagram
+The system follows a structured workflow that transforms raw data into meaningful visual insights. The process begins with collecting datasets in CSV format, followed by data cleaning and preprocessing to ensure data quality and consistency. The cleaned dataset is then used within a virtualized Ubuntu environment where Power BI Desktop is used to create visualizations. These visualizations are combined into an interactive dashboard, which can optionally be shared through cloud platforms for remote access.
+
 Raw Dataset (CSV)
-        ↓
+↓
 Data Cleaning & Preprocessing
-        ↓
+↓
 Cleaned Dataset
-        ↓
+↓
 Virtual Machine (Ubuntu)
-        ↓
-Tableau Desktop
-        ↓
+↓
+Power BI Desktop
+↓
 Charts Creation
-        ↓
+↓
 Interactive Dashboard
-        ↓
+↓
 Cloud / Sharing
