@@ -12,7 +12,7 @@ The project implements a cloud-enabled interactive data visualization system usi
 - Structured for visualization
 
 ### 2. Visualization Layer
-- Tableau dashboards
+- Power BI dashboards
 - KPI indicators
 - Interactive filters
 - Dashboard actions
@@ -29,7 +29,7 @@ The project implements a cloud-enabled interactive data visualization system usi
 
 ## Data Flow
 
-Dataset → Tableau Processing → Dashboard Creation → VM Testing → Cloud Hosting → Remote Access
+Dataset → Power BI Processing → Dashboard Creation → VM Testing → Cloud Hosting → Remote Access
 
 ## Benefits Achieved
 
